@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <style>
-  .skill-box {
-    background: #fff;
-    transition: transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    height: 100%;
-  }
+  /* Skills section background */
+    #skills-section {
+      background-color: #000;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
 
-  .skill-box:hover {
-    transform: translateY(-5px);
-  }
+    /* Skill box */
+    .skill-box {
+      background-color: #1a1a1a;
+      color: #fff;
+      transition: all 0.3s ease;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      padding: 24px 16px;
+      cursor: pointer;
+    }
 
-  .skill-box img {
-    max-height: 64px;
-    width: auto;
-  }
+    /* Skill title */
+    .skill-box h5 {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      margin-top: 12px;
+      transition: color 0.3s ease;
+    }
 
-  .skill-box h5 {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #333; /* Make sure it's not white or transparent */
-  }
-  .tech-logos img {
-  margin: 0 5px;
-  height: 32px;
-}
+    /* Yellow filter effect */
+    .skill-box img {
+      max-height: 64px;
+      transition: filter 0.3s ease;
+      filter: brightness(0) saturate(100%) invert(73%) sepia(88%) saturate(1000%) hue-rotate(1deg) brightness(104%) contrast(103%);
+    }
+
+    /* Hover styles */
+    .skill-box:hover {
+      background-color: #c7aa09;
+      color: #000;
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+    }
+
+    .skill-box:hover h5 {
+      color: #000;
+    }
+
+    .skill-box:hover img {
+      filter: none;
+    }
+
+    /* Heading styles */
+    #skills-section h1, #skills-section h2, #skills-section p {
+      color: #fff;
+    }
+
+
+
+
 .project {
   position: relative;
   height: 300px;
@@ -86,7 +119,7 @@
 
 <html lang="en">
   <head>
-    <title>SANJOG - Free Bootstrap 4 Template by Colorlib</title>
+    <title>SANJOG KUMAR MEHTA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -112,7 +145,7 @@
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">SANJOG</a>
+	      <a class="navbar-brand" href="index.html">SANJOG </a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -290,122 +323,112 @@ If you’re looking for a reliable developer who combines technical skill with a
 </section>
 		
 		<section class="ftco-section" id="skills-section">
-  <div class="container">
-    <div class="row justify-content-center pb-5">
-      <div class="col-md-12 heading-section text-center ftco-animate">
-        <h1 class="big big-2">Skills</h1>
-        <h2 class="mb-4">My Skills</h2>
-        <p>I combine creativity, technical expertise, and attention to detail to deliver impactful results. From concept to execution, these are the tools and technologies I use to bring ideas to life.
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center">
+          <h1 class="big big-2">Skills</h1>
+          <h2 class="mb-4">My Skills</h2>
+          <p>
+            I combine creativity, technical expertise, and attention to detail to deliver impactful results.
+            From concept to execution, these are the tools and technologies I use to bring ideas to life.
+            🛠️ Always learning, always improving.
+          </p>
+        </div>
+      </div>
 
-🛠️ Always learning, always improving.</p>
+      <div class="row text-center">
+
+        <!-- Repeatable skill card -->
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://img.icons8.com/color/96/html-5.png" alt="HTML5" class="img-fluid mb-2" />
+            <h5>HTML5</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://img.icons8.com/color/96/css3.png" alt="CSS3" class="img-fluid mb-2" />
+            <h5>CSS3</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://img.icons8.com/ios-filled/100/0769ad/jquery.png" alt="jQuery" class="img-fluid mb-2" />
+            <h5>jQuery</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://img.icons8.com/color/96/java-coffee-cup-logo.png" alt="Java" class="img-fluid mb-2" />
+            <h5>Java</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://img.icons8.com/color/96/net-framework.png" alt=".NET" class="img-fluid mb-2" />
+            <h5>.NET</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://img.icons8.com/color/96/figma--v1.png" alt="Figma" class="img-fluid mb-2" />
+            <h5>Figma</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://img.icons8.com/color/96/numpy.png" alt="NumPy" class="img-fluid mb-2" />
+            <h5>NumPy</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" class="img-fluid mb-2" style="height:64px;" />
+            <h5>Pandas</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter" class="img-fluid mb-2" style="height:64px;" />
+            <h5>Jupyter</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="Photoshop" class="img-fluid mb-2" />
+            <h5>Photoshop</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://bluej.org/images/bluej-icon-256.png" alt="BlueJ" class="img-fluid mb-2" />
+            <h5>BlueJ</h5>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-6 mb-4">
+          <div class="skill-box">
+            <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-color-tal-revivo.png" alt="Django" class="img-fluid mb-2" />
+            <h5>Django</h5>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="row text-center">
-
-      <!-- Skill Card -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://img.icons8.com/color/96/000000/adobe-photoshop--v1.png" alt="Photoshop" class="img-fluid mb-2" />
-          <h5>Photoshop</h5>
-        </div>
-      </div>
-
-      <!-- jQuery -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://img.icons8.com/ios-filled/100/0769ad/jquery.png" alt="jQuery" class="img-fluid mb-2" />
-          <h5>jQuery</h5>
-        </div>
-      </div>
-
-      <!-- HTML5 -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://img.icons8.com/color/96/html-5.png" alt="HTML5" class="img-fluid mb-2" />
-          <h5>HTML5</h5>
-        </div>
-      </div>
-
-      <!-- CSS3 -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://img.icons8.com/color/96/css3.png" alt="CSS3" class="img-fluid mb-2" />
-          <h5>CSS3</h5>
-        </div>
-      </div>
-
-      <!-- .Net -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://img.icons8.com/color/96/net-framework.png" alt=".NET" class="img-fluid mb-2" />
-          <h5>.NET</h5>
-        </div>
-      </div>
-
-      <!-- Java -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://img.icons8.com/color/96/java-coffee-cup-logo.png" alt="Java" class="img-fluid mb-2" />
-          <h5>Java</h5>
-        </div>
-      </div>
-
-      <!-- Django -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-color-tal-revivo.png" alt="Django" class="img-fluid mb-2" />
-          <h5>Django</h5>
-        </div>
-      </div>
-
-      <!-- Sigma (Assuming Sigma.js or design tool) -->
-      <!-- Figma -->
-<div class="col-md-3 col-sm-4 col-6 mb-4">
-  <div class="skill-box p-3 border rounded text-center">
-    <img src="https://img.icons8.com/color/96/figma--v1.png" alt="Figma" class="img-fluid mb-2" style="max-height:64px;" />
-    <h5 class="mt-2">Figma</h5>
-  </div>
-</div>
+  </section>
 
 
-      <!-- BlueJ -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://bluej.org/images/bluej-icon-256.png" alt="BlueJ" class="img-fluid mb-2" />
-          <h5>BlueJ</h5>
-        </div>
-      </div>
-
-      <!-- Bumpy (assuming Bumpy as Python typo – maybe you meant NumPy?) -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://img.icons8.com/color/96/numpy.png" alt="NumPy" class="img-fluid mb-2" />
-          <h5>NumPy</h5>
-        </div>
-      </div>
-
-      <!-- Pandas -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" class="img-fluid mb-2" style="height: 64px;" />
-          <h5>Pandas</h5>
-        </div>
-      </div>
-
-      <!-- Jupyter -->
-      <div class="col-md-3 col-sm-4 col-6 mb-4">
-        <div class="skill-box p-3 border rounded">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter" class="img-fluid mb-2" style="height: 64px;" />
-          <h5>Jupyter</h5>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-    <section class="ftco-section ftco-project" id="projects-section">
+   <section class="ftco-section ftco-project" id="projects-section">
   <div class="container">
     <div class="row justify-content-center pb-5">
       <div class="col-md-12 heading-section text-center ftco-animate">
@@ -418,11 +441,14 @@ If you’re looking for a reliable developer who combines technical skill with a
 
       <!-- Library Management System -->
       <div class="col-md-6 mb-4">
-        <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center position-relative"
              style="background-image: url('images/library.jpeg');">
+          <a href="#" class="project-link-icon" target="_blank" title="View Project">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/link--v1.png" alt="Link Icon" />
+          </a>
           <div class="overlay"></div>
           <div class="text text-center p-4">
-            <h3><a href="#">Library Management System</a></h3>
+            <h3><a href="https://github.com/SparrowHee/First-project">Library Management System</a></h3>
             <p class="text-light small">Developed using HTML, CSS, Bootstrap, and Django.</p>
             <div class="tech-logos mt-2">
               <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML">
@@ -434,13 +460,16 @@ If you’re looking for a reliable developer who combines technical skill with a
         </div>
       </div>
 
-      <!-- E-commerce Cloth Store -->
+      <!-- Wardrobe Wonders -->
       <div class="col-md-6 mb-4">
-        <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center position-relative"
              style="background-image: url('images/eccomerce.webp');">
+          <a href="https://github.com/Shah-Labhesh/WARDROBE-WONDERS" class="project-link-icon" target="_blank" title="View on GitHub">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/link--v1.png" alt="Link Icon" />
+          </a>
           <div class="overlay"></div>
           <div class="text text-center p-4">
-            <h3><a href="#">E-commerce Cloth Store</a></h3>
+            <h3><a href="https://github.com/Shah-Labhesh/WARDROBE-WONDERS" target="_blank">Wardrobe Wonders</a></h3>
             <p class="text-light small">Built with HTML, CSS, JavaScript, and Java framework.</p>
             <div class="tech-logos mt-2">
               <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML">
@@ -454,8 +483,11 @@ If you’re looking for a reliable developer who combines technical skill with a
 
       <!-- Hotel Management System -->
       <div class="col-md-6 mb-4">
-        <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center position-relative"
              style="background-image: url('images/hotel.jpg');">
+          <a href="#" class="project-link-icon" target="_blank" title="View Project">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/link--v1.png" alt="Link Icon" />
+          </a>
           <div class="overlay"></div>
           <div class="text text-center p-4">
             <h3><a href="#">Hotel Management System</a></h3>
@@ -469,8 +501,11 @@ If you’re looking for a reliable developer who combines technical skill with a
 
       <!-- Portfolio Website -->
       <div class="col-md-6 mb-4">
-        <div class="project img ftco-animate d-flex justify-content-center align-items-center"
+        <div class="project img ftco-animate d-flex justify-content-center align-items-center position-relative"
              style="background-image: url('images/portfolio.jpg');">
+          <a href="#" class="project-link-icon" target="_blank" title="View Project">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/link--v1.png" alt="Link Icon" />
+          </a>
           <div class="overlay"></div>
           <div class="text text-center p-4">
             <h3><a href="#">Personal Portfolio Website</a></h3>
@@ -487,6 +522,7 @@ If you’re looking for a reliable developer who combines technical skill with a
     </div>
   </div>
 </section>
+
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
@@ -575,8 +611,21 @@ If you’re looking for a reliable developer who combines technical skill with a
               <h2 class="ftco-heading-2">About</h2>
 Hi, I'm Sanjog Kumar Mehta – a passionate freelancer and web designer with a keen eye for clean, modern, and user-friendly designs. I specialize in creating responsive websites that not only look great but also deliver a seamless user experience. Whether you're a business, startup, or individual, I'm here to bring your online vision to life.              
 <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="https://www.facebook.com/sanjog.mehta.2025/"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.instagram.com/sanjog_arya_10/"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate">
+  <a href="https://www.facebook.com/sanjog.mehta.2025/">
+    <span class="icon-facebook"></span>
+  </a>
+</li>
+<li class="ftco-animate">
+  <a href="https://www.instagram.com/sanjog_arya_10/">
+    <span class="icon-instagram"></span>
+  </a>
+</li>
+<li class="ftco-animate">
+  <a href="https://www.linkedin.com/in/sanjog-kumar-mehta-1b7609250/" target="_blank">
+    <span class="icon-linkedin"></span>
+  </a>
+</li>
               </ul>
             </div>
           </div>
@@ -621,7 +670,7 @@ Hi, I'm Sanjog Kumar Mehta – a passionate freelancer and web designer with a k
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Sanjog Kumar Mehta</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | By <a href="https://colorlib.com" target="_blank">Sanjog Kumar Mehta</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
